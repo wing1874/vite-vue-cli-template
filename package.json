@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "vue3+vite+eslint+prettier+ts+elementPlus脚手架",
   "type": "module",
+  "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js"
@@ -10,10 +11,9 @@
   "keywords": [],
   "author": "wing1874",
   "bin": {
-    "create-cli-template": "bin/index.js"
+    "create-cli-template": "index.js"
   },
   "files": [
-    "index.js",
     "dist",
     "packages"
   ],

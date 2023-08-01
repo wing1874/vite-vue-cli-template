@@ -1,7 +1,7 @@
 export default {
-  input: ['bin/index.js', 'bin/template.js'],
+  input: 'bin/index.js',
   output: {
-    file: 'bundle.js',
-    format: 'cjs',
+    file: 'dist/main.mjs',
+    format: 'esm',
   },
 };

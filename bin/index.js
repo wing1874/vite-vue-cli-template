@@ -1,4 +1,3 @@
-#!/usr/bin/env node
 import prompts from 'prompts';
 import { createSpinner } from 'nanospinner';
 import { fileURLToPath } from 'node:url';
