@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.js"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:prettier/recommended"
+      ],
+      "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+      },
+      "rules": {
+        "no-unused-vars": "warn"
+      }
+    },
+    {
+      "files": [
+        "*.vue"
+      ],
+      "parser": "vue-eslint-parser",
+      "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+      },
+      "extends": [
+        "eslint:recommended",
+        "plugin:vue/vue3-recommended",
+        "plugin:prettier/recommended"
+      ],
+      "plugins": [
+        "vue",
+        "prettier"
+      ],
+      "rules": {
+        "no-unused-vars": "warn",
+        "vue/multi-word-component-names": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "vite-vue-cli",
+  "version": "1.0.0",
+  "description": "vue3+vite+eslint+prettier+ts+elementPlus脚手架",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c rollup.config.js"
+  },
+  "keywords": [],
+  "author": "wing1874",
+  "bin": {
+    "create-cli-template": "bin/index.js"
+  },
+  "files": [
+    "index.js",
+    "dist",
+    "packages"
+  ],
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "hhttps://github.com/wing1874/vite-vue-cli-template.git"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "nanospinner": "^1.1.0",
+    "prompts": "^2.4.2",
+    "rollup": "^3.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.5",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.9.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "^3.0.0"
+  }
+}
