@@ -1,19 +1,21 @@
 {
-  "name": "vite-vue-cli",
+  "name": "create-vue3-elementui",
   "version": "1.0.0",
   "description": "vue3+vite+eslint+prettier+ts+elementPlus脚手架",
   "type": "module",
-  "main": "dist/main.js",
+  "main": "dist/main.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js"
   },
-  "keywords": [],
+  "keywords": ["vue3","elementPlus" ],
   "author": "wing1874",
   "bin": {
-    "create-cli-template": "index.js"
+    "create-vue3-elementui": "index.js"
   },
+  "license": "MIT",
   "files": [
+    "index.js",
     "dist",
     "packages"
   ],
@@ -24,7 +26,10 @@
     "type": "git",
     "url": "hhttps://github.com/wing1874/vite-vue-cli-template.git"
   },
+  "homepage": "https://github.com/wing1874/vite-vue-cli-template",
+
   "dependencies": {
+    "@rollup/plugin-terser": "^0.4.3",
     "fs-extra": "^11.1.1",
     "kolorist": "^1.8.0",
     "minimist": "^1.2.8",

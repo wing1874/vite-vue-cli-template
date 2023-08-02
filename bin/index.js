@@ -74,6 +74,10 @@ async function init() {
 
     const { projectName, projectType, pkgManage } = result;
     if (!projectName) return;
+    if (fs.existsSync(targetDir)) {
+      spinner.error({ text: 'Project name 已存在', mark: ':(' });
+      return;
+    }
 
     // copy
     const TEMPLATE = {
