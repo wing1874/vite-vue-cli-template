@@ -9,19 +9,19 @@
 With NPM:
 
 ```bash
-$ npm create vue3-elementui@latest
+npm create vue3-elementui@latest
 ```
 
 With Yarn:
 
 ```bash
-$ yarn create vue3-elementui
+yarn create vue3-elementui
 ```
 
 With PNPM:
 
 ```bash
-$ pnpm create vue3-elementui
+pnpm create vue3-elementui
 ```
 
 Then follow the prompts

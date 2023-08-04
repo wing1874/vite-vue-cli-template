@@ -115,7 +115,7 @@ async function init() {
     const installMap = {
       npm: `npm i`,
       yarn: `yarn`,
-      pnpm: `pnpm`,
+      pnpm: `pnpm install`,
     };
 
     const spinner = createSpinner('install packages...').start();
