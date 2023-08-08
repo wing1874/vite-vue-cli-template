@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: 16.x
       - name: 安装依赖
-        run: npm ci
+        run: yarn
   
       - name: 构建
-        run: npm run build 
+        run: yarn build 
     
 
   publish-npm:
