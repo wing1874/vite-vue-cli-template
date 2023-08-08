@@ -7,14 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js",
-    "release": "standard-version"
+    "update:version": "standard-version" ,
+    "release": "npm run update:version && git push --follow-tags origin main"
+    
   },
-  "standard-version": {
-    "scripts": {
-      "posttag": "git push --follow-tags origin main  && npm publish"
-    },
-    "changelogHeader": "#  Changelog\n"
-  },
+  
   "keywords": [
     "vue3",
     "elementPlus"
