@@ -15,8 +15,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm test
+      - name: 安装依赖
+        run: yarn
+  
+      - name: 构建
+        run: yarn build 
+    
 
   publish-npm:
     needs: build
@@ -27,7 +31,6 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm publish
+      - run: yarn release
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
