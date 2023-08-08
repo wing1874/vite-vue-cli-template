@@ -1,6 +1,6 @@
 {
   "name": "create-vue3-elementui",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "vue3+vite+eslint+prettier+ts+elementPlus脚手架",
   "type": "module",
   "main": "dist/main.mjs",
