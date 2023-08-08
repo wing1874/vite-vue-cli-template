@@ -7,11 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c rollup.config.js",
-    "release": "npx standard-version"
+    "release": "standard-version"
   },
   "standard-version": {
     "scripts": {
-      "posttag": "git push --follow-tags origin main && npm publish"
+      "posttag": "git push --follow-tags origin main"
     },
     "changelogHeader": "#  Changelog\n"
   },
@@ -44,8 +44,7 @@
     "minimist": "^1.2.8",
     "nanospinner": "^1.1.0",
     "prompts": "^2.4.2",
-    "rollup": "^3.27.0",
-    "standard-version": "^9.5.0"
+    "rollup": "^3.27.0"
   },
   "devDependencies": {
     "@types/node": "^20.4.5",
