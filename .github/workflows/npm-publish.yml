@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: 16.x
       - name: 安装依赖
-        run: yarn
+        run: npm install
   
       - name: 构建
-        run: yarn build 
+        run: npm run build 
     
 
   publish-npm:
@@ -33,6 +33,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: git config user.name wing1874      
       - run: git config user.email wing890711@gmail.com 
-      - run: yarn release
+      - run: npm run release
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
