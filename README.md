@@ -1,8 +1,8 @@
-# vue3+elementUI
+# vue3+elementUI 脚手架
 
 ### 使用
 
-# create-vite
+# create-vue3-elementui
 
 > Vite requires [Node.js](https://nodejs.org/en/) version 14.18+, 16+.
 
